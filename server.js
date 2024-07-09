@@ -29,8 +29,5 @@ app.use("/api/v1/product", productRoute);
 const port = process.env.PORT || 8000;
 
 app.listen(port, () => {
-  console.log(
-    `Server is running on ${process.env.DEV_MODE} on mode port ${port}`.bgCyan
-      .white
-  );
+  console.log(`Server is running on port ${port}`);
 });
